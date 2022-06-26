@@ -42,7 +42,6 @@ textarea {
   white-space: pre-wrap;
   height: 80px; /*me used to be 80px*/
   border-top: 1px solid white;
-  margin: 7px; /*me*/
 }
 
 .hour {
