@@ -1,13 +1,13 @@
-var textBoxArr = document.getElementsByClassName("description");
+var textBoxArr = document.getElementsByClassName("description"); //This is turning hardcoded HTML into an array to be used to dynamically create textareas to add tasks
 var textArea;
-var times = [900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700];
+var times = [900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700]; //this array will be used to give each textarea (for wrting tasks) a class that will correspond to a button 
 
 //this loops through the array created by variable on line 1, that is made up of hardcoded HTML elements.
 //The loop dynamically generates textareas for you to add tasks.
 var makeTextArea = function() {
     for (i = 0; i < textBoxArr.length; i++) {
         textArea = document.createElement("textarea");
-        textArea.classList.add(times[i]);
+        textArea.classList.add(times[i]); //this adds a class that will correspond to it's buttons ID attribute
         textBoxArr[i].appendChild(textArea);
     }
 };
@@ -25,7 +25,6 @@ var displayTasks = function() {
         $("." + times[i]).val(localStorage.getItem(times[i]));
         var currentTime = moment().format("HH");
         currentTime = currentTime + "00";
-        console.log(currentTime, times[i]);
 
         //these statements change the background color of the tasks
         if (currentTime > times[i]) {
