@@ -7,7 +7,7 @@ var times = [900, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700]; //this array 
 var makeTextArea = function() {
     for (i = 0; i < textBoxArr.length; i++) {
         textArea = document.createElement("textarea");
-        textArea.classList.add(times[i]); //this adds a class that will correspond to it's buttons ID attribute
+        textArea.classList.add(times[i]); //this adds a class that will correspond to it's buttons ID attribute, based off the times array on line 3
         textBoxArr[i].appendChild(textArea);
     }
 };
@@ -19,11 +19,11 @@ $(".saveBtn").on("click", function(event) {
     localStorage.setItem(captureSave, task);
 });
 
-//This function loops through the local storage to display your tasks once the page is refreshed
+//This function loops through the local storage to display your tasks once the page is refreshed, and set the background colors
 var displayTasks = function() {
     for (i = 0; i < times.length; i++) {
         $("." + times[i]).val(localStorage.getItem(times[i]));
-        var currentTime = moment().format("HH");
+        var currentTime = moment().format("HH"); //this brings in the current time so that it can be used to color each task backgorund.
         currentTime = currentTime + "00";
 
         //these statements change the background color of the tasks
@@ -39,7 +39,6 @@ var displayTasks = function() {
     }
 
 };
-
 
 //This prints the date at the top of the screen
 var printTopDate = function() {
