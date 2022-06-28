@@ -11,7 +11,7 @@ textarea {
   color: #000000;
   border: 1px solid black;
   padding: 10px;
-  width: 90%; /*me*/
+  width: 90%; 
   height: 85%;
   border-radius: 10px;
 }
@@ -24,7 +24,7 @@ textarea {
   border-bottom: 10px solid black;
 }
 
-.margins { /*me*/
+.margins { 
   margin-top: 60px;
   margin-bottom: 175px;
   padding-bottom: 15px;
@@ -33,7 +33,7 @@ textarea {
 
 .description {
   white-space: pre-wrap;
-  border-top: 3px solid #000000; /*me*/
+  border-top: 3px solid #000000; 
 }
 
 .time-block {
@@ -42,14 +42,14 @@ textarea {
 
 .row {
   white-space: pre-wrap;
-  height: 120px; /*me used to be 80px*/
+  height: 120px; 
   border-top: 1px solid white;
 }
 
 .hour {
   background-color: #ffffff;
   color: #000000;
-  border-top: 3px dashed #000000; /*used to be 1px dashed */
+  border-top: 3px dashed #000000; 
 }
 
 .past {
@@ -58,12 +58,12 @@ textarea {
 }
 
 .present {
-  background-color: #fff59e; /* used to be #ff6961 */
+  background-color: #fff59e; 
   color: #000000;
 }
 
 .future {
-  background-color: #cefad0; /* used to be #77dd77 */
+  background-color: #cefad0; 
   color: #000000;
 }
 
@@ -73,10 +73,10 @@ textarea {
   border-bottom-right-radius: 15px;
   background-color: #06AED5;
   color: white;
-  font-size: 30px; /*me*/
+  font-size: 30px; 
 }
 
-.saveBtn:hover { /* used to say .saveBtn i:hover*/
+.saveBtn:hover { 
   font-size: 20px;
   transition: all .3s ease-in-out;
 }
